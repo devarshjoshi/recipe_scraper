@@ -14,6 +14,7 @@ request: to make the request to the url and process the returned data
 **Architecture:** 
 index.js - main file to get and process the request
 ingredientHelper.js: to break the ingredients string into unit, quantity and name. There are functions in the file to make it testable.
+
 **Future Architecture Updates:**
 Create new files for each website scraped to make it more modular and easy to update and test.
 
