@@ -6,6 +6,16 @@ https://www.eatthelove.com/cookies-and-cream-cookies/
 https://www.maangchi.com/recipe/bugeopo-gochujang-muchim
 http://www.laurainthekitchen.com/recipes/croque-madam/
 
+**Running the code**
+1) clone the repo
+2) run: ``npm install``
+3) run the command: ``node index.js`` or ``npm run dev`` (which starts a nodemon instance)
+
+
+**API Call**
+make a get request to: localhost:3000/recipes/http://www.laurainthekitchen.com/recipes/croque-madam/
+I used postman to make the requests. 
+
 **External Dependencies:**
 expressjs: I used express because it is quick to setup, easy to use and meets the requirements for this project
 cheeriojs: I have used cheeriojs to scrape the recipes because of its flexibility and ease of use.
