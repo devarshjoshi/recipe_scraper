@@ -9,7 +9,7 @@ const port=3000;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.get('/recipes/*', function(req, res){
+app.get('/recipes/*', (req, res) => {
 
 	let param = req.params[0];
 	let url = URL.parse(param,true);

@@ -7,8 +7,8 @@ const unitsArr = ["slices","slice","grams","gram","tbsp","tablespoons","teaspoon
 
 */
 
-const getQuantity2= function(str2){
-
+const getQuantity2 = (str2) => {
+   
 	let start = str2.indexOf('(');
 	let end = str2.indexOf(')');
 	let text = str2.substring(start,end+1);
@@ -21,7 +21,7 @@ const getQuantity2= function(str2){
 	Searches for the quantity in the ingredient string and returns the quantity.
 	This function takes into account the string and numeric quantities
 */
-const getQty = function (str){
+const getQty = (str) => {
 	let q ='';
 	const strQty = ["a few","a touch"];
 
@@ -51,7 +51,7 @@ const getQty = function (str){
 /*
 	looks for the unit in the ingredient string and returns the unit
 */
-const getUnit = function(str){
+const getUnit = (str) => {
 	let unit='';
 	for(let val of unitsArr){
 		
@@ -66,7 +66,7 @@ const getUnit = function(str){
 
 
 
-const removeTextFromIngredient = function(unit,ingredient){
+const removeTextFromIngredient = (unit,ingredient) => {
 
 	return ingredient.replace(unit,"");
 
