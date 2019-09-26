@@ -6,23 +6,24 @@ https://www.eatthelove.com/cookies-and-cream-cookies/
 https://www.maangchi.com/recipe/bugeopo-gochujang-muchim
 http://www.laurainthekitchen.com/recipes/croque-madam/
 
-External Dependencies:
+**External Dependencies:**
 expressjs: I used express because it is quick to setup, easy to use and meets the requirements for this project
 cheeriojs: I have used cheeriojs to scrape the recipes because of its flexibility and ease of use.
 request: to make the request to the url and process the returned data
 
-Architecture: 
+**Architecture:** 
 index.js - main file to get and process the request
 ingredientHelper.js: to break the ingredients string into unit, quantity and name. There are functions in the file to make it testable.
-Future Updates:
+**Future Architecture Updates:**
 Create new files for each website scraped to make it more modular and easy to update and test.
 
-Challenges:
+**Challenges:**
 The lack of id or class attribute in couple of the websites made it harder to scrape. Every website had its own structure and 
 the code could not be standardized for all the websites. The different structure of the list of ingredients also added more 
-complexity to it.
+complexity to it. Even though cheerio is suppose to be easy to use, figuring out how to use it was a bit of a learning curve.
 
-Improvements to be made:
+
+**Improvements to be made:**
 1) take metric units into account
 2) clean up the steps by trimming whitespace
 3) remove "of" from ingredients in laurainthekitchen and remove line breaks in the steps.
